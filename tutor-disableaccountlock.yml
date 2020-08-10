@@ -1,0 +1,6 @@
+name: disableaccountlock
+version: 0.1.0
+patches:
+  openedx-common-settings: |
+    # disable account lock after multiple incorrect login attempt
+    FEATURES["ENABLE_MAX_FAILED_LOGIN_ATTEMPTS"] = False
